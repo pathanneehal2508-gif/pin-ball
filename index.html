@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinball Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-info">
+            <div class="score-display">
+                <span>Score: </span>
+                <span id="score">0</span>
+            </div>
+            <div class="level-display">
+                <span>Level: </span>
+                <span id="level">1</span>
+            </div>
+            <div class="lives-display">
+                <span>Lives: </span>
+                <span id="lives">3</span>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas" width="400" height="600"></canvas>
+        
+        <div class="controls">
+            <p>Controls:</p>
+            <p><strong>Z</strong> - Left Flipper | <strong>M</strong> - Right Flipper</p>
+            <p><strong>SPACE</strong> - Launch Ball</p>
+            <button id="startBtn" class="btn">Start Game</button>
+            <button id="resetBtn" class="btn">Reset Game</button>
+        </div>
+        
+        <div id="gameOverMessage" class="game-over-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
